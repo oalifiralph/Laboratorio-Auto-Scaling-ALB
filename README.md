@@ -8,7 +8,7 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png" width="180" alt="AWS Logo">
 </a>
 <img src="https://miro.medium.com/v2/resize:fit:512/0*81xCYukT_2jKzxgJ.png" width="80" alt="AWS Logo">- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBfRQV8LLwGpQciyGQ2drjckBDVvZCECVdzA&s" width="80" alt="AWS Logo">-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ47Ji1yhUawSLNBXPp8UERlP7nKo3d1f2EKw&s" width="80" alt="AWS Logo">- 
-    <img src="https://github.com/HalleyVeras/Escola_da_Nuvem/blob/main/Documentos/download%20(4)_processed.png?raw=true" width="210" alt="Second Image">
+    <img src="edn.png" width="210" alt="Second Image">
 </a>
 </div>
 
@@ -17,6 +17,7 @@
 
 **Turma:** DPCN 07  
 **Aluno:** Álifi Ralph 
+
 ## 📌 Objetivos
 Este laboratório ensina como configurar um ambiente web altamente disponível e escalável na **AWS**, utilizando:
 
@@ -46,7 +47,7 @@ Este laboratório ensina como configurar um ambiente web altamente disponível e
 
 <img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/VPC-Default.png?raw=true">-
 <img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/VPC-Route-Tables.png?raw=true" width="400" alt="AWS Logo">- 
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/Notepad-informs-.png?raw=true"  width="400" alt="AWS Logo">-
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/Note-pad.png" width="400" alt="AWS Logo">-
 
 ---
 
@@ -60,3 +61,13 @@ Este laboratório ensina como configurar um ambiente web altamente disponível e
      - HTTP: `0.0.0.0/0`
      - HTTPS: `0.0.0.0/0`
 3. Salve as configurações.
+
+📸 **Print do Security Group:** 
+
+<img src="https://github.com/HalleyVeras/Laboratorio6_CursoDpcn_EDN/blob/main/arquivos1/create_security_group_01_basic%20details.jpg?raw=true">-
+<img src="https://github.com/HalleyVeras/Laboratorio6_CursoDpcn_EDN/blob/main/arquivos1/create_security_group_02_inboundRoules.jpg?raw=true" width="400" alt="AWS Logo">-
+<img src="https://github.com/HalleyVeras/Laboratorio6_CursoDpcn_EDN/blob/main/arquivos1/create_security_group_03_outbound_padr%C3%A3o.jpg?raw=true" width="400" alt="AWS Logo">-
+<img src="https://github.com/HalleyVeras/Laboratorio6_CursoDpcn_EDN/blob/main/arquivos1/create_security_group_04_sucess.jpg?raw=true" width="400" alt="AWS Logo">-
+
+---
+    
