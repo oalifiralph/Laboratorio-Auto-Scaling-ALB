@@ -7,8 +7,8 @@
 <a href="https://escoladanuvem.org"><a href="https://aws.amazon.com/pt/?nc2=h_lg">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png" width="180" alt="AWS Logo">
 </a>
-<img src="https://miro.medium.com/v2/resize:fit:512/0*81xCYukT_2jKzxgJ.png" width="80" alt="AWS Logo">- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBfRQV8LLwGpQciyGQ2drjckBDVvZCECVdzA&s" width="80" alt="AWS Logo">-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ47Ji1yhUawSLNBXPp8UERlP7nKo3d1f2EKw&s" width="80" alt="AWS Logo">- 
-    <img src="edn.png" width="210" alt="Second Image">
+<img src="https://miro.medium.com/v2/resize:fit:512/0*81xCYukT_2jKzxgJ.png" width="110" alt="AWS Logo">- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBfRQV8LLwGpQciyGQ2drjckBDVvZCECVdzA&s" width="110" alt="AWS Logo">-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ47Ji1yhUawSLNBXPp8UERlP7nKo3d1f2EKw&s" width="110" alt="AWS Logo">- 
+    <img src="edn.png" width="200" alt="Second Image">
 </a>
 </div>
 
@@ -46,7 +46,7 @@ Este laboratório ensina como configurar um ambiente web altamente disponível e
 📸 **Print da VPC padrão:** 
 
 <img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/VPC-Default.png?raw=true">-
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/VPC-Route-Tables.png?raw=true" width="400" alt="AWS Logo">- 
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/VPC-Route-Tables.png?raw=true" width="500" alt="AWS Logo">- 
 <img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/Note-pad.png" width="400" alt="AWS Logo">-
 
 ---
@@ -60,14 +60,37 @@ Este laboratório ensina como configurar um ambiente web altamente disponível e
    - **Inbound Rules:**
      - HTTP: `0.0.0.0/0`
      - HTTPS: `0.0.0.0/0`
+     - SSH: `45.167.210.64/32`
 3. Salve as configurações.
 
 📸 **Print do Security Group:** 
 
-<img src="https://github.com/HalleyVeras/Laboratorio6_CursoDpcn_EDN/blob/main/arquivos1/create_security_group_01_basic%20details.jpg?raw=true">-
-<img src="https://github.com/HalleyVeras/Laboratorio6_CursoDpcn_EDN/blob/main/arquivos1/create_security_group_02_inboundRoules.jpg?raw=true" width="400" alt="AWS Logo">-
-<img src="https://github.com/HalleyVeras/Laboratorio6_CursoDpcn_EDN/blob/main/arquivos1/create_security_group_03_outbound_padr%C3%A3o.jpg?raw=true" width="400" alt="AWS Logo">-
-<img src="https://github.com/HalleyVeras/Laboratorio6_CursoDpcn_EDN/blob/main/arquivos1/create_security_group_04_sucess.jpg?raw=true" width="400" alt="AWS Logo">-
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/Confi-Security-Group-Acess.png?raw=true">-
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/ASG-Create.png?raw=true">-
 
 ---
-    
+
+### 3️⃣ Criar um Launch Template
+1. Acesse **EC2 > Launch Templates**.
+2. Crie um novo **Launch Template** com as configurações:
+   - **Nome:** `LT-SeuNome`
+   - **AMI:** `Amazon Linux 2`
+   - **Tipo de Instância:** `t2.micro`
+   - **Security Group:** `SG-Lab-SeuNome`
+   - **User Data:**
+     ```bash
+     #!/bin/bash
+     yum update -y
+     yum install -y httpd
+     systemctl start httpd
+     systemctl enable httpd
+     echo "<h1>Servidor Web - Instância: $(hostname -f)</h1>" > /var/www/html/index.html
+     ```
+3. Salve e crie o template.
+
+📸 **Print do Launch Template:** 
+
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/arquivos01/Launch-do-Ralph.png?raw=true" width="800" alt="aws"> 
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/arquivos01/Launch-Template.png?raw=true" width="800" alt="aws">
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/arquivos01/Launch-do-Ralph-02.png?raw=true" width="800" alt="aws">
+
