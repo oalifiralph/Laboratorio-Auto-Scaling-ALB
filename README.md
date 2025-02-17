@@ -46,8 +46,8 @@ Este laboratório ensina como configurar um ambiente web altamente disponível e
 📸 **Print da VPC padrão:** 
 
 <img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/VPC-Default.png?raw=true" width="800" alt="aws">
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/VPC-Route-Tables.png?raw=true" width="400">- 
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/Note-pad.png?raw=true" width="500" alt="AWS Logo">-
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/VPC-Route-Tables.png?raw=true" width="800">- 
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/Note-pad.png?raw=true" width="800" alt="AWS Logo">-
 
 ---
 
