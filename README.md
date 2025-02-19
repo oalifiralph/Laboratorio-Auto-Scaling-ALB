@@ -22,7 +22,9 @@
 Este laboratório ensina como configurar um ambiente web altamente disponível e escalável na **AWS**, utilizando:
 
 ✅ **Auto Scaling Groups** – Para gerenciar automaticamente o número de instâncias EC2 conforme a demanda.
+
 ✅ **Launch Templates** – Para definir as configurações das instâncias EC2.
+
 ✅ **Application Load Balancer** – Para distribuir o tráfego de entrada de maneira inteligente.
 
 ---
@@ -90,7 +92,25 @@ Este laboratório ensina como configurar um ambiente web altamente disponível e
 
 📸 **Print do Launch Template:** 
 
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/arquivos01/Launch-do-Ralph.png?raw=true" width="800" alt="aws"> 
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/arquivos01/Quick-Start.png?raw=true" width="800" alt="aws">
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/arquivos01/Launch-do-Ralph-02.png?raw=true" width="800" alt="aws">
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/arquivos01/Launch-Template.png?raw=true" width="800" alt="aws">
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/arquivos01/Launch-do-Ralph.png?raw=true" width="400" alt="aws">-
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/arquivos01/Quick-Start.png?raw=true" width="400" alt="aws">-
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/arquivos01/Launch-do-Ralph-02.png?raw=true" width="400" alt="aws">-
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/arquivos01/Launch-Template.png?raw=true" width="400" alt="aws">-
+
+---
+
+### 4️⃣ Criar um Auto Scaling Group
+1. Acesse **EC2 > Auto Scaling Groups**.
+2. Crie um novo **Auto Scaling Group**:
+   - **Nome:** `ASG-SeuNome`
+   - **Launch Template:** `LT-SeuNome`
+   - **VPC:** Selecione a VPC padrão
+   - **Subnets:** Escolha pelo menos duas públicas
+   - **Capacidade Inicial:** `1`, **Mínima:** `2`, **Máxima:** `4`
+   - **Attach to a Load Balancer:** Selecione **Application Load Balancer**
+   - **Health Check:** Ativar **Elastic Load Balancer health check**
+3. Finalize a criação.
+
+📸 **Print do Auto Scaling Group e Load Balancer:** 
+
+
