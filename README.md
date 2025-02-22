@@ -1,6 +1,6 @@
 <div align="center" style="font-family: Arial, sans-serif; font-size: 20px; line-height: 1.5;">
 
-# 💻☁️ **Curso DPCN-EDN** 💻☁️
+# 💻☁️ **Curso DPCN-EDN** ☁️💻
 # 🌟 Solutions Architect Associate  🌟
 
 ###
@@ -8,7 +8,7 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png" width="180" alt="AWS Logo">
 </a>
 <img src="https://miro.medium.com/v2/resize:fit:512/0*81xCYukT_2jKzxgJ.png" width="110" alt="AWS Logo">- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBfRQV8LLwGpQciyGQ2drjckBDVvZCECVdzA&s" width="110" alt="AWS Logo">-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ47Ji1yhUawSLNBXPp8UERlP7nKo3d1f2EKw&s" width="110" alt="AWS Logo">- 
-    <img src="?raw=true" width="110" alt="Second Image">
+    <img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/Escola-da-Nuvem.png?raw=true?raw=true" width="125" alt="Second Image">
 </a>
 </div>
 
@@ -119,3 +119,22 @@ Este laboratório ensina como configurar um ambiente web altamente disponível e
 <img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/ASG-Config.md/Health-Check.png?raw=true?raw=true" width="400" alt="aws">-
 <img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/ASG-Config.md/ASG-Create.png?raw=true?raw=true" width="400" alt="aws">-
 <img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/ASG-Config.md/ASG-Created.png?raw=true?raw=true" width="400" alt="aws">-
+
+---
+
+### 5️⃣ Testando o Ambiente
+
+1. Copie o **DNS do Load Balancer** e acesse pelo navegador.
+2. Atualize a página e veja que a instância EC2 muda (balanceamento funcionando!).
+3. Monitore o **Auto Scaling Group** e verifique a criação automática de novas instâncias.
+
+📸 **Print do Teste:**
+
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/EC2/Instance--.png?raw=true" width="440" alt="aws">-
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/EC2/Instance-.png?raw=true" width="400" alt="aws">-
+
+---
+
+🔎 **Dúvidas ou melhorias? Compartilhe suas experiências!** 🚀
+
+#AWS #CloudComputing #EC2 #AutoScaling #LoadBalancing 
