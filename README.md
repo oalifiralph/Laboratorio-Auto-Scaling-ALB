@@ -8,7 +8,7 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png" width="180" alt="AWS Logo">
 </a>
 <img src="https://miro.medium.com/v2/resize:fit:512/0*81xCYukT_2jKzxgJ.png" width="110" alt="AWS Logo">- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBfRQV8LLwGpQciyGQ2drjckBDVvZCECVdzA&s" width="110" alt="AWS Logo">-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ47Ji1yhUawSLNBXPp8UERlP7nKo3d1f2EKw&s" width="110" alt="AWS Logo">- 
-    <img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/Escola-da-Nuvem.png?raw=true" width="110" alt="Second Image">
+    <img src="?raw=true" width="110" alt="Second Image">
 </a>
 </div>
 
