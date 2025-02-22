@@ -106,7 +106,7 @@ Este laboratório ensina como configurar um ambiente web altamente disponível e
    - **Launch Template:** `LT-SeuNome`
    - **VPC:** Selecione a VPC padrão
    - **Subnets:** Escolha pelo menos duas públicas
-   - **Capacidade Inicial:** `1`, **Mínima:** `2`, **Máxima:** `4`
+   - **Capacidade Inicial:** `1`, **Mínima:** `2`, **Máxima:** `permite até 20.000 instâncias por região em um Auto Scaling Group.`
    - **Attach to a Load Balancer:** Selecione **Application Load Balancer**
    - **Health Check:** Ativar **Elastic Load Balancer health check**
 3. Finalize a criação.
