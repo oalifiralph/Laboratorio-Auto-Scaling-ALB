@@ -4,12 +4,13 @@
 # 🌟 Solutions Architect Associate  🌟
 
 ###
-<a href="https://escoladanuvem.org"><a href="https://aws.amazon.com/pt/?nc2=h_lg">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png" width="180" alt="AWS Logo">
-</a>
-<img src="https://miro.medium.com/v2/resize:fit:512/0*81xCYukT_2jKzxgJ.png" width="110" alt="AWS Logo">- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBfRQV8LLwGpQciyGQ2drjckBDVvZCECVdzA&s" width="110" alt="AWS Logo">-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ47Ji1yhUawSLNBXPp8UERlP7nKo3d1f2EKw&s" width="110" alt="AWS Logo">- 
-    <img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/Escola-da-Nuvem.png?raw=true?raw=true" width="125" alt="Second Image">
-</a>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png" width="150" alt="AWS Logo">
+<img src="https://miro.medium.com/v2/resize:fit:512/0*81xCYukT_2jKzxgJ.png" width="100" alt="AWS Logo"> 
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBfRQV8LLwGpQciyGQ2drjckBDVvZCECVdzA&s" width="100" alt="AWS Logo">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ47Ji1yhUawSLNBXPp8UERlP7nKo3d1f2EKw&s" width="100" alt="AWS Logo"> 
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/Escola-da-Nuvem.png?raw=true?raw=true" width="113" alt="Second Image">
+
 </div>
 
 
