@@ -1,20 +1,21 @@
 <div align="center" style="font-family: Arial, sans-serif; font-size: 20px; line-height: 1.5;">
 
-# 💻☁️ **Curso DPCN-EDN** ☁️💻
-# 🌟 Solutions Architect Associate  🌟
+# ☁️ **Curso DPCN-EDN** ☁️
+# 👨🏻‍💻 Solutions Architect Associate  👨🏻‍💻
 
 ###
-
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png" width="150" alt="AWS Logo">
-<img src="https://miro.medium.com/v2/resize:fit:512/0*81xCYukT_2jKzxgJ.png" width="100" alt="AWS Logo"> 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBfRQV8LLwGpQciyGQ2drjckBDVvZCECVdzA&s" width="100" alt="AWS Logo">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ47Ji1yhUawSLNBXPp8UERlP7nKo3d1f2EKw&s" width="100" alt="AWS Logo"> 
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/Escola-da-Nuvem.png?raw=true?raw=true" width="113" alt="Second Image">
+<img src="https://figmaresource.com/wp-content/uploads/2024/05/AWS-Marketplace-Logo-PNG-to-svg-1.svg" width="100" alt="AWS logo">
+<img src="https://cloud-icons.onemodel.app/aws/Architecture-Service-Icons_01312023/Arch_Networking-Content-Delivery/64/Arch_Amazon-Virtual-Private-Cloud_64.svg" width="100" alt="AWS VPC"> 
+<img src="https://cloud-icons.onemodel.app/aws/Architecture-Service-Icons_01312023/Arch_Compute/64/Arch_Amazon-EC2-Auto-Scaling_64.svg" width="100" alt="AWS Logo">
+<img src="https://cloud-icons.onemodel.app/aws/Architecture-Service-Icons_01312023/Arch_Networking-Content-Delivery/64/Arch_Elastic-Load-Balancing_64.svg" width="100" alt="AWS Logo"> 
+<img src="https://github.com/oalifiralph/oalifiralph/blob/main/img/EDN-Logo.svg" width="113" alt="Second Image">
 
 </div>
 
 
-# 🏗️ Laboratório: Auto Scaling e Load Balancing na AWS
+# 👨🏻‍🔬  Laboratório:
+
+## Aplicação de Auto Scaling e Load Balancing na instância EC2 da AWS
 
 **Turma:** DPCN 07  
 **Aluno:** Álifi Ralph 
