@@ -15,7 +15,7 @@
 
 # 👨🏻‍🔬  Laboratório:
 
-## Aplicação de Auto Scaling e Load Balancing na instância EC2 da AWS
+## Aplicação de Auto Scaling e Load Balancing na instância EC2
 
 **Turma:** DPCN 07  
 **Aluno:** Álifi Ralph 
