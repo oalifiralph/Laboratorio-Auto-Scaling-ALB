@@ -31,6 +31,17 @@ Este laboratório ensina como configurar um ambiente web altamente disponível e
 
 ---
 
+## 💡 Cenário:
+
+Uma plataforma de streaming de vídeos está expandindo sua base de usuários e precisa garantir que os espectadores tenham uma experiência fluida, mesmo durante eventos ao vivo ou lançamentos populares.
+
+- O time de operações quer garantir que os servidores escalem automaticamente para suportar picos de acesso sem quedas de desempenho.
+
+- O time de engenharia precisa distribuir o tráfego entre os servidores para evitar sobrecarga e garantir streaming contínuo.
+- A equipe financeira busca otimizar custos, garantindo que apenas os servidores necessários estejam ativos a cada momento.
+
+Para atender a esses requisitos, você configurará Auto Scaling Groups, Launch Templates e Application Load Balancer, garantindo uma infraestrutura altamente escalável, resiliente e otimizada na AWS. 
+
 ## 🔧 Pré-requisitos
 - Conta AWS ativa
 - Permissões IAM: `AmazonEC2FullAccess`, `AmazonEC2AutoScalingFullAccess`, `ElasticLoadBalancingFullAccess`
@@ -41,7 +52,7 @@ Este laboratório ensina como configurar um ambiente web altamente disponível e
 ## 🚀 Passo a Passo
 
 ### 1️⃣ Configuração da VPC
-1. Acesse o **Console AWS** e selecione a região `us-east-1`.
+1. Acesse o **Console AWS** e selecione a região de sua escolha, exemplo: `us-east-1`.
 2. No menu de pesquisa, digite **VPC** e selecione o serviço.
 3. Verifique a **VPC padrão** (`Default VPC = Yes`).
 4. Anote o **ID da VPC** (`vpc-xxxxxxxxxxxxxxxxx`).
