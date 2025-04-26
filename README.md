@@ -143,7 +143,7 @@ Para atender a esses requisitos, você configurará Auto Scaling Groups, Launch 
 
 📸 **Print do Teste:**
 
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/EC2/Instance--.png?raw=true" width="440" alt="aws">-
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/EC2/Instance--.png?raw=true" width="430" alt="aws">-
 <img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/EC2/Instance-.png?raw=true" width="400" alt="aws">-
 
 ---
