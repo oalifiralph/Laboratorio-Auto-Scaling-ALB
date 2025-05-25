@@ -61,6 +61,7 @@ Uma plataforma de streaming de vídeos está expandindo sua base de usuários e 
 4️⃣. Anote o **ID da VPC** (`vpc-xxxxxxxxxxxxxxxxx`).
 
 <img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/VPC/VPC-Route-Tables.png?raw=true" width="1000" alt="VPC">- 
+
 5️⃣. Verifique as **subnets** disponíveis e anote os IDs (`subnet-xxxxxxxxxxxxxxxxx`).
 
 6️⃣. Revise as anotações e siga o fluxo das etapas
@@ -72,10 +73,8 @@ Uma plataforma de streaming de vídeos está expandindo sua base de usuários e 
 2️⃣3️⃣4️⃣5️⃣6️⃣
 
 ### 🔐 Configurações do Security Group
-1️⃣. Acesse **EC2 > Security Groups**.
-
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/Confi-Security-Group-Acess.png?raw=true">-
-<img src="https://raw.githubusercontent.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/refs/heads/main/ASG-Config.md/ASG-Create.png">-
+1️⃣. Volte ao **Console AWS** e selecione o serviço **Security Groups >EC2 feature**.
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/ASG-Config.md/SecurityGroup.png?raw=true">-
 
 2️⃣. Crie um novo Security Group:
    - **Nome:** `SG-Lab-SeuNome`
@@ -85,15 +84,16 @@ Uma plataforma de streaming de vídeos está expandindo sua base de usuários e 
      - HTTP: `0.0.0.0/0`
      - HTTPS: `0.0.0.0/0`
      - SSH: `45.167.210.64/32`
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/Confi-Security-Group-Acess.png?raw=true">-
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/ASG-Config.md/ASG-Create.png?raw=true">-
 
 3️⃣. Salve as configurações.
 
-📸 **Print do Security Group:** 
-
-
 ---
 
-### 3️⃣ Criar um Launch Template
+### 🧱 Criar um Launch Template
+
+
 1. Acesse **EC2 > Launch Templates**.
 2. Crie um novo **Launch Template** com as configurações:
    - **Nome:** `LT-SeuNome`
