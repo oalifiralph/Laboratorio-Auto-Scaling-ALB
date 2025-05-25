@@ -39,36 +39,41 @@ Uma plataforma de streaming de vídeos está expandindo sua base de usuários e 
 
 - O time de engenharia precisa distribuir o tráfego entre os servidores para evitar sobrecarga e garantir streaming contínuo.
 - A equipe financeira busca otimizar custos, garantindo que apenas os servidores necessários estejam ativos a cada momento.
+ 
+#### **Para atender a estes requisitos, você configurará Auto Scaling Groups, Launch Templates e Application Load Balancer, garantindo uma infraestrutura altamente escalável, resiliente e otimizada na AWS.**
+---
+## 📋 Pré-requisitos
+### 
+- 🪪 **Conta**: AWS ativa.
+- 🔑 **Permissões IAM**: `AmazonEC2FullAccess`, `AmazonEC2AutoScalingFullAccess`, `ElasticLoadBalancingFullAccess` 
+- 🌐 **Navegador Web**: **Google Chrome**, **Mozilla Firefox**, **Microsoft Edge**, **Safari**... 
+---
+## 🔧 Configurações da VPC
 
-Para atender a esses requisitos, você configurará Auto Scaling Groups, Launch Templates e Application Load Balancer, garantindo uma infraestrutura altamente escalável, resiliente e otimizada na AWS. 
+## ⬇️ Workflow
+1️⃣. Acesse o **Console AWS** e selecione a região de sua escolha, exemplo: `us-east-1`.
 
-## 🔧 Pré-requisitos
-- Conta AWS ativa
-- Permissões IAM: `AmazonEC2FullAccess`, `AmazonEC2AutoScalingFullAccess`, `ElasticLoadBalancingFullAccess`
-- Navegador Web
+2️⃣. No menu de pesquisa, digite **VPC** e selecione o serviço.
+
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/VPC/VPC-Default.png?raw=true" width="1000" alt="VPC">
+3️⃣. Verifique a **VPC padrão** (`Default VPC = Yes`).
+
+4️⃣. Anote o **ID da VPC** (`vpc-xxxxxxxxxxxxxxxxx`).
+
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/VPC/VPC-Route-Tables.png?raw=true" width="1000" alt="VPC">- 
+5️⃣. Verifique as **subnets** disponíveis e anote os IDs (`subnet-xxxxxxxxxxxxxxxxx`).
+
+6️⃣. Revise as anotações e siga o fluxo das etapas
+
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/Note-pad.png?raw=true" width="1000" alt="NotePad">-
 
 ---
 
-## 🚀 Passo a Passo
+2️⃣3️⃣4️⃣5️⃣6️⃣
 
-### 1️⃣ Configuração da VPC
-1. Acesse o **Console AWS** e selecione a região de sua escolha, exemplo: `us-east-1`.
-2. No menu de pesquisa, digite **VPC** e selecione o serviço.
-3. Verifique a **VPC padrão** (`Default VPC = Yes`).
-4. Anote o **ID da VPC** (`vpc-xxxxxxxxxxxxxxxxx`).
-5. Verifique as **subnets** disponíveis e anote os IDs (`subnet-xxxxxxxxxxxxxxxxx`).
-
-📸 **Print da VPC padrão:** 
-
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/VPC/VPC-Default.png?raw=true" width="800" alt="aws">
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/VPC/VPC-Route-Tables.png?raw=true" width="800">- 
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/Note-pad.png?raw=true" width="800" alt="AWS Logo">-
-
----
-
-### 2️⃣ Criar um Security Group
-1. Acesse **EC2 > Security Groups**.
-2. Crie um novo Security Group:
+### Configurações do Security Group
+1️⃣. Acesse **EC2 > Security Groups**.
+2️⃣. Crie um novo Security Group:
    - **Nome:** `SG-Lab-SeuNome`
    - **Descrição:** HTTP, HTTPS, SSH
    - **VPC:** VPC padrão
@@ -76,7 +81,7 @@ Para atender a esses requisitos, você configurará Auto Scaling Groups, Launch 
      - HTTP: `0.0.0.0/0`
      - HTTPS: `0.0.0.0/0`
      - SSH: `45.167.210.64/32`
-3. Salve as configurações.
+3️⃣. Salve as configurações.
 
 📸 **Print do Security Group:** 
 
