@@ -70,7 +70,8 @@ Uma plataforma de streaming de vídeos está expandindo sua base de usuários e 
 
 ---
 
-### 🔐 Configurações do Security Group
+## 🔐 Configurações do Security Group
+
 1️⃣. Volte ao **Console AWS** e selecione o serviço **Security Groups > EC2 feature**.
 <img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/ASG-Config.md/SecurityGroup.png?raw=true">-
 
@@ -79,9 +80,9 @@ Uma plataforma de streaming de vídeos está expandindo sua base de usuários e 
    - **Descrição:** `HTTP`, `HTTPS`, `SSH`
    - **VPC:** `Default`
    - **Inbound Rules:**
-     - HTTP: `0.0.0.0/0`
-     - HTTPS: `0.0.0.0/0`
-     - SSH: `45.167.210.64/32`
+     - HTTP: `0.0.0.0/0` (Em qualquer lugar - IPv4)
+     - HTTPS: `0.0.0.0/0` (Em qualquer lugar - IPv4)
+   -**Outbound Rules:** Default
 
 <img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/Confi-Security-Group-Acess.png?raw=true">-
 <img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/ASG-Config.md/ASG-Create.png?raw=true">-
