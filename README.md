@@ -48,7 +48,7 @@ Uma plataforma de streaming de vídeos está expandindo sua base de usuários e 
 - 🔑 **Permissões IAM**: `AmazonEC2FullAccess`, `AmazonEC2AutoScalingFullAccess`, `ElasticLoadBalancingFullAccess` 
 - 🌐 **Navegador Web**: **Google Chrome**, **Mozilla Firefox**, **Microsoft Edge**, **Safari**... 
 ---
-## 🔧 Configurações da VPC
+## 🛜🔒 Configurações da VPC
 
 ## ⬇️ Workflow
 1️⃣. Acesse o **Console AWS** e selecione a região de sua escolha, exemplo: `us-east-1`.
@@ -71,8 +71,12 @@ Uma plataforma de streaming de vídeos está expandindo sua base de usuários e 
 
 2️⃣3️⃣4️⃣5️⃣6️⃣
 
-### Configurações do Security Group
+### 🔐 Configurações do Security Group
 1️⃣. Acesse **EC2 > Security Groups**.
+
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/Confi-Security-Group-Acess.png?raw=true">-
+<img src="https://raw.githubusercontent.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/refs/heads/main/ASG-Config.md/ASG-Create.png">-
+
 2️⃣. Crie um novo Security Group:
    - **Nome:** `SG-Lab-SeuNome`
    - **Descrição:** HTTP, HTTPS, SSH
@@ -81,12 +85,11 @@ Uma plataforma de streaming de vídeos está expandindo sua base de usuários e 
      - HTTP: `0.0.0.0/0`
      - HTTPS: `0.0.0.0/0`
      - SSH: `45.167.210.64/32`
+
 3️⃣. Salve as configurações.
 
 📸 **Print do Security Group:** 
 
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/Confi-Security-Group-Acess.png?raw=true">-
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/ASG-Create.png?raw=true">-
 
 ---
 
