@@ -71,8 +71,8 @@ Uma plataforma de streaming de vídeos está expandindo sua base de usuários e 
 ---
 
 ## 🔐 Configurações do Security Group
-
 1️⃣. Volte ao **Console AWS** e selecione o serviço **Security Groups > EC2 feature**.
+
 <img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/ASG-Config.md/SecurityGroup.png?raw=true">-
 
 2️⃣. Crie um novo Security Group:
@@ -82,9 +82,8 @@ Uma plataforma de streaming de vídeos está expandindo sua base de usuários e 
    - **Inbound Rules:**
      - HTTP: `0.0.0.0/0` (Em qualquer lugar - IPv4)
      - HTTPS: `0.0.0.0/0` (Em qualquer lugar - IPv4)
-   -**Outbound Rules:** Default
+   - **Outbound Rules:** `Default`
 
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/Confi-Security-Group-Acess.png?raw=true">-
 <img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/ASG-Config.md/ASG-Create.png?raw=true">-
 
 3️⃣. Salve as configurações.
@@ -93,8 +92,11 @@ Uma plataforma de streaming de vídeos está expandindo sua base de usuários e 
 
 ### 🧱 Criar um Launch Template
 
-
 1️⃣. Volte ao **Console AWS** e selecione o serviço **EC2 > Launch Templates**.
+
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/LaunchTemplate/Launch-do-Ralph.png?raw=true?raw=true" width="1000" alt="aws">-
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/LaunchTemplate/Quick-Start.png?raw=true?raw=true" width="1000" alt="aws">-
+
 2️⃣. Crie um novo **Launch Template** com as configurações:
    - **Nome:** `LT-SeuNome`
    - **Template Version Description:** `De sua escolha`
@@ -103,24 +105,24 @@ Uma plataforma de streaming de vídeos está expandindo sua base de usuários e 
    - **Security Group:** `SG-Lab-SeuNome`
    - **Storage:** `De sua escolha` 
    - **Advanced details  > User Data:**
-     ```bash
+
+ <img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/LaunchTemplate/user-data-template.png?raw=true" width="1000" alt="aws">-    
+
+```bash
      #!/bin/bash > Define que o script será interpretado pelo Bash
      yum update -y > Atualiza os pacotes da instância
      yum install -y httpd > Instala o servidor Apache (httpd)
      systemctl start httpd > Inicia o serviço Apache
      systemctl enable httpd > Configura o serviço para iniciar automaticamente no boot
      echo "<h1>Servidor Web - Instância: $(hostname -f)</h1>" > /var/www/html/index.html > Cria uma página HTML simples no diretório padrão apache (/var/www/html/), incluindo o nome da instância
-     ```
-
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/LaunchTemplate/Launch-do-Ralph.png?raw=true?raw=true" width="1000" alt="aws">-
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/LaunchTemplate/Quick-Start.png?raw=true?raw=true" width="1000" alt="aws">-
+```
 
 3️⃣. Salve e crie o template.
-
 
 ---
 
 ### 1️⃣ Criar um Auto Scaling Group
+
 1. Acesse **EC2 > Auto Scaling Groups**.
 2. Crie um novo **Auto Scaling Group**:
    - **Nome:** `ASG-SeuNome`
