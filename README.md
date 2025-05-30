@@ -61,20 +61,20 @@ Uma plataforma de streaming de vídeos está expandindo sua base de usuários e 
 
 4️⃣. Anote o **ID da VPC** (`vpc-xxxxxxxxxxxxxxxxx`).
 
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/VPC/VPC-Route-Tables.png?raw=true" width="1000" alt="VPC">- 
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/VPC/VPC-Route-Tables.png?raw=true" width="1000" alt="VPC">
 
 5️⃣. Verifique as **subnets** disponíveis e anote os IDs (`subnet-xxxxxxxxxxxxxxxxx`).
 
 6️⃣. Revise as anotações e siga o fluxo das etapas
 
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/Note-pad.png?raw=true" width="1000" alt="NotePad">-
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/Note-pad.png?raw=true" width="1000" alt="NotePad">
 
 ---
 
 ## 🔐 Configurações do Security Group
 1️⃣. Volte ao **Console AWS** e selecione o serviço **Security Groups > EC2 feature**.
 
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/ASG-Config.md/SecurityGroup.png?raw=true">-
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/ASG-Config.md/SecurityGroup.png?raw=true">
 
 2️⃣. Crie um novo Security Group:
    - **Nome:** `SG-Lab-SeuNome`
@@ -85,7 +85,8 @@ Uma plataforma de streaming de vídeos está expandindo sua base de usuários e 
      - HTTPS: `0.0.0.0/0` (Em qualquer lugar - IPv4)
    - **Outbound Rules:** `Default`
 
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/ASG-Config.md/ASG-Create.png?raw=true">-
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/ASG-Config.md/Confi-Security-Group-Acess.png?raw=true" width="1000" alt="Security Group">
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/ASG-Config.md/ASG-Create.png?raw=true" width="1000" alt="Security Group">
 
 3️⃣. Salve as configurações.
 
@@ -95,8 +96,8 @@ Uma plataforma de streaming de vídeos está expandindo sua base de usuários e 
 
 1️⃣. Volte ao **Console AWS** e selecione o serviço **EC2 > Launch Templates**.
 
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/LaunchTemplate/Launch-do-Ralph.png?raw=true?raw=true" width="1000" alt="aws">-
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/LaunchTemplate/Quick-Start.png?raw=true?raw=true" width="1000" alt="aws">-
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/LaunchTemplate/Launch-do-Ralph.png?raw=true?raw=true" width="1000" alt="aws">
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/LaunchTemplate/Quick-Start.png?raw=true?raw=true" width="1000" alt="aws">
 
 2️⃣. Crie um novo **Launch Template** com as configurações:
    - **Nome:** `LT-SeuNome`
@@ -104,10 +105,10 @@ Uma plataforma de streaming de vídeos está expandindo sua base de usuários e 
    - **AMI:** `De sua escolha`
    - **Tipo de Instância:** `De sua escolha`
    - **Security Group:** `SG-Lab-SeuNome`
-   - **Storage:** `De sua escolha` 
+   - **Storage:** `De sua escolha`
    - **Advanced details  > User Data:**
 
- <img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/LaunchTemplate/user-data-template.png?raw=true" width="1000" alt="aws">-    
+ <img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/LaunchTemplate/user-data-template.png?raw=true" width="1000" alt="aws">-
 
 ```bash
      #!/bin/bash > Define que o script será interpretado pelo Bash
@@ -122,7 +123,17 @@ Uma plataforma de streaming de vídeos está expandindo sua base de usuários e 
 
 ---
 
-### 1️⃣ Criar um Auto Scaling Group
+## Criar um Load Balancer com Auto Scaling Group
+
+1️⃣. Informações de balanceamento de carga
+
+   - **Anexar o Balanceador de Carga**: `Anexar um novo balanceador de carga` 
+   - **Tipo de Balanceador de Carga**: `ALB para HTTP, HTTPS e NLB para TCP, UDP` 
+   - **Nome do Balanceador de Carga**: `De sua escolha`
+   - 
+
+
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/ASG-Config.md/ASG-Config-1.png?raw=true?raw=true" width="1000" alt="aws">
 
 1. Acesse **EC2 > Auto Scaling Groups**.
 2. Crie um novo **Auto Scaling Group**:
@@ -135,10 +146,9 @@ Uma plataforma de streaming de vídeos está expandindo sua base de usuários e 
    - **Health Check:** Ativar **Elastic Load Balancer health check**
 3. Finalize a criação.
 
-📸 **Print do Auto Scaling Group e Load Balancer:** 
 
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/ASG-Config.md/ASG-Config-1.png?raw=true?raw=true" width="400" alt="aws">-
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/ASG-Config.md/ASG-Config-2.jpeg?raw=true?raw=true" width="400" alt="aws">-
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/ASG-Config.md/ASG-Config-1.png?raw=true?raw=true" width="500" alt="aws">-
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/ASG-Config.md/ASG-Config-2.jpeg?raw=true?raw=true" width="500" alt="aws">-
 <img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/ASG-Config.md/ASG-Config-3.png?raw=true?raw=true" width="400" alt="aws">-
 <img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/ASG-Config.md/Health-Check.png?raw=true?raw=true" width="400" alt="aws">-
 <img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/ASG-Config.md/ASG-Create.png?raw=true?raw=true" width="400" alt="aws">-
@@ -154,8 +164,8 @@ Uma plataforma de streaming de vídeos está expandindo sua base de usuários e 
 
 📸 **Print do Teste:**
 
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/EC2/Instance--.png?raw=true" width="430" alt="aws">-
-<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/EC2/Instance-.png?raw=true" width="400" alt="aws">-
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/EC2/Instance_.png?raw=true" width="600" alt="aws">-
+<img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/EC2/Instance-.png?raw=true" width="600" alt="aws">-
 
 ---
 
