@@ -45,9 +45,10 @@ Uma plataforma de streaming de vídeos está expandindo sua base de usuários e 
 ---
 ## 📋 Pré-requisitos
 ### 
-- 🪪 **Conta**: AWS ativa.
+- 🌐 **Navegador Web**: `Google Chrome`, `Mozilla Firefox`, `Microsoft Edge`, `Safari`...
+- 🪪 **Conta**: `Conta AWS`
 - 🔑 **Permissões IAM**: `AmazonEC2FullAccess`, `AmazonEC2AutoScalingFullAccess`, `ElasticLoadBalancingFullAccess` 
-- 🌐 **Navegador Web**: **Google Chrome**, **Mozilla Firefox**, **Microsoft Edge**, **Safari**... 
+
 ---
 ## 🛜🔒 Configurações da VPC
 
@@ -57,7 +58,8 @@ Uma plataforma de streaming de vídeos está expandindo sua base de usuários e 
 2️⃣. No menu de pesquisa, digite **VPC** e selecione o serviço.
 
 <img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/VPC/VPC-Default.png?raw=true" width="1000" alt="VPC">
-3️⃣. Verifique a **VPC padrão** (`Default VPC = Yes`).
+
+3️⃣. Verifique a sua VPC.
 
 4️⃣. Anote o **ID da VPC** (`vpc-xxxxxxxxxxxxxxxxx`).
 
@@ -79,7 +81,7 @@ Uma plataforma de streaming de vídeos está expandindo sua base de usuários e 
 2️⃣. Crie um novo Security Group:
    - **Nome:** `SG-Lab-SeuNome`
    - **Descrição:** `HTTP`, `HTTPS`, `SSH`
-   - **VPC:** `Default`
+   - **VPC:** `De sua escolha`
    - **Inbound Rules:**
      - HTTP: `0.0.0.0/0` (Em qualquer lugar - IPv4)
      - HTTPS: `0.0.0.0/0` (Em qualquer lugar - IPv4)
@@ -127,10 +129,10 @@ Uma plataforma de streaming de vídeos está expandindo sua base de usuários e 
 
 1️⃣. Informações de balanceamento de carga
 
-   - **Anexar o Balanceador de Carga**: `Anexar um novo balanceador de carga` 
-   - **Tipo de Balanceador de Carga**: `ALB para HTTP, HTTPS e NLB para TCP, UDP` 
-   - **Nome do Balanceador de Carga**: `De sua escolha`
-   - 
+   - **Anexar o Balanceador de Carga**: `Anexar um Novo Balanceador de Carga` 
+   - **Tipo de Balanceador de Carga**: `ALB para HTTP/HTTPS e NLB para TCP/UDP` 
+   - **Nome do Balanceador de Carga**: `De Sua Escolha`
+   - **Balanceador de Carga Scheme**: `Internet-facing` (Direciona o tráfego de usuários da internet para os servidores)
 
 
 <img src="https://github.com/oalifiralph/Laboratorio-Auto-Scaling-ALB/blob/main/ASG-Config.md/ASG-Config-1.png?raw=true?raw=true" width="1000" alt="aws">
@@ -139,7 +141,7 @@ Uma plataforma de streaming de vídeos está expandindo sua base de usuários e 
 2. Crie um novo **Auto Scaling Group**:
    - **Nome:** `ASG-SeuNome`
    - **Launch Template:** `LT-SeuNome`
-   - **VPC:** Selecione a VPC padrão
+   - **VPC:** Selecione a sua VPC 
    - **Subnets:** Escolha pelo menos duas públicas
    - **Capacidade Inicial:** `1`, **Mínima:** `2`, **Máxima:** `permite até 20.000 instâncias por região em um Auto Scaling Group.`
    - **Attach to a Load Balancer:** Selecione **Application Load Balancer**
